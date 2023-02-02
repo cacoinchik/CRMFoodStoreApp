@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 
 namespace FoodStoreeDB.AppDb
 {
-    public class AppDbContext
+    public class AppDbContext : DbContext
     {
+        public AppDbContext() : base("FoodStoreDB") { }
+        public DbSet<Product> Products { get; set;}
+        public DbSet<Category> Categories { get; set;}
 
     }
 }
