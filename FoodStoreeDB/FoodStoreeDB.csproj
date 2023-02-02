@@ -54,9 +54,14 @@
     <Compile Include="AppDb\AppDbContext.cs" />
     <Compile Include="AppDb\Category.cs" />
     <Compile Include="AppDb\Product.cs" />
+    <Compile Include="AppDb\Shift.cs" />
     <Compile Include="Migrations\202302021250038_first.cs" />
     <Compile Include="Migrations\202302021250038_first.designer.cs">
       <DependentUpon>202302021250038_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202302021640547_second.cs" />
+    <Compile Include="Migrations\202302021640547_second.designer.cs">
+      <DependentUpon>202302021640547_second.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +73,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202302021250038_first.resx">
       <DependentUpon>202302021250038_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302021640547_second.resx">
+      <DependentUpon>202302021640547_second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

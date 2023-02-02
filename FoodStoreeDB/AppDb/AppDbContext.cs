@@ -7,6 +7,7 @@ namespace FoodStoreeDB.AppDb
         public AppDbContext() : base("FoodStoreDB") { }
         public DbSet<Product> Products { get; set;}
         public DbSet<Category> Categories { get; set;}
+        public DbSet<Shift> Shifts { get; set;}
 
     }
 }
