@@ -34,9 +34,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1382, 631);
             this.Name = "SellerUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellerUI";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SellerUI_FormClosed);
             this.ResumeLayout(false);
 
         }

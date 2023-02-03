@@ -53,7 +53,7 @@ namespace SellerMainForm
         //Переход к окну продаж
         private void materialFlatButton1_Click(object sender, EventArgs e)
         {
-            SellerUI sellerUI = new SellerUI();
+            var sellerUI = new SellerUI();
             Shift shift = new Shift();
             shift.Name = "Открытие смены";
             shift.WorkingShift = DateTime.Now;

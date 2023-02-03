@@ -9,24 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SellerMainForm
+namespace AdministratorApp
 {
-    public partial class SellerUI : MaterialForm
+    public partial class AdminUi : MaterialForm
     {
-        public SellerUI()
+        public AdminUi()
         {
             InitializeComponent();
         }
 
-
-
-
-
-
-        private void SellerUI_FormClosed(object sender, FormClosedEventArgs e)
+        //Переход к окну уведомлений
+        private void noticeButton_Click(object sender, EventArgs e)
         {
-            var startForm = Application.OpenForms[0];
-            startForm.Show();
+            var noticeForm=new NoticeForm();
+            noticeForm.Show();
+            Hide();
         }
     }
 }
